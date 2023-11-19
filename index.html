@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('./smartmathicsv1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 400px;
+      margin-right: 200px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      position: absolute;
+    }
+    /* Responsive design for smartphones */
+    @media only screen and (max-width: 600px) {
+      body {
+        background-size: contain;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="downloadApp()">Download App</button>
+
+  <script>
+    function downloadApp() {
+      window.location.href = 'https://www.mediafire.com/file/93s4c45567gauoe/SmartMATHics-Official.apk/file';
+    }
+  </script>
+
+</body>
+</html>
